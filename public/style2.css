@@ -1,0 +1,63 @@
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#101010 ;
+}
+.w{
+    width: 210px;
+    height: 160px;
+    border-radius:10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 2;
+}
+.log-btn{
+    /* background-color: #f30b1ac6; */
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 10%;
+   
+}
+.btn{
+    background-color: #101010;
+    color: #fff;
+    border: none;
+    
+    height: 100px;
+}
+.w::before{
+    content: "";
+    background-image:conic-gradient(#f30b1ac6 20deg,
+    transparent 120deg
+    );
+    width: 150%;
+    height: 150%;
+    position:absolute;
+    animation: rotate 2s linear infinite;
+}
+.main{
+    position: absolute;
+    background-color: #101010;
+    width: 200px;
+    height: 150px;;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+@keyframes rotate{
+    0%{
+    transform :rotate(0deg)        
+   }
+    100%{
+        transform: rotate(360deg);
+    }
+}
